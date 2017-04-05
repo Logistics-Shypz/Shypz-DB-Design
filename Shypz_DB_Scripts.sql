@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `Shypz_User`.`User_Details` (
   `User_Location` VARCHAR(100) NOT NULL,
   `UD_User_ID` INT NOT NULL,
   PRIMARY KEY (`User_Detail_Id`),
-  CONSTRAINT `User_Id`
+  CONSTRAINT `UD_User_ID`
     FOREIGN KEY (`UD_User_ID`)
     REFERENCES `Shypz_User`.`User` (`User_Id`)
     ON DELETE CASCADE
